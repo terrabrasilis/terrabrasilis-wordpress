@@ -1,0 +1,292 @@
+/*
+ Theme Name:   terrabrasilis Child
+ Theme URI:    http://example.com/terrabrasilis-child/
+ Description:  Tema adptado do Twenty Seventeen Child Theme
+ Author:       Claudinei de Camargo
+ Author URI:   http://example.com
+ Template:     terrabrasilis
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  terrabrasilis-child
+*/
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/*adicionado*/
+body {font-family: 'Raleway', sans-serif; font-size: 16px; font-weight: 400; color: #666;}
+body.page:not(.twentyseventeen-front-page) .entry-title { text-transform: none !important; letter-spacing:0 !important; }
+.page.page-one-column .entry-header, .twentyseventeen-front-page.page-one-column .entry-header, .archive.page-one-column:not(.has-sidebar) .page-header { margin-bottom: 0px !important;}
+.wrap {max-width: 1215px !important; }
+.clasclear {clear:both;}
+strong { font-weight: 600;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Poppins', sans-serif !important;}
+/* conteudo */
+.has-sidebar:not(.error404) #primary {width: 68% !important;}
+ .search-results #primary {min-width:68% !important;}
+
+/* Sidebar*/
+.has-sidebar #secondary {width: 28%}
+.home .entry-header { display:none;}
+.entry-content {margin-top:-50px;}
+
+/*Responsive*/
+@media(max-width:768px) {
+/*For Content*/
+.has-sidebar:not(.error404) #primary {
+width: 100%;
+}
+	
+.n2-ow p { visibility: hidden; height:0px !important;}
+.tituloemdestaque {margin-top:50px;}
+.n2-ss-button-container { margin-bottom:20px;}
+		
+/*For Sidebar*/
+.has-sidebar #secondary {width: 100%;}
+}
+
+table a { color:#026d61;}
+body table {font-size:13px !important;} /* texto tabela*/
+.site-content {padding: 3.5em 0 0;}
+
+p {line-height:30px !important;}
+ul {margin-left:15px;}
+
+.tabela { font-size:10px;}
+.search-field {padding-right:100px !important; border:1px solid #e2e2e2 !important;}
+table.is-style-regular tr:first-child {background-color: #f3f4f5;}
+
+.vcard {display:none;}
+.byline {display:none !important;}
+
+h2.widget-title {font-family: 'Roboto'; color:#026d61; font-weight: 900 !important; letter-spacing:0; font-size:16px; text-transform:capitalize !important;}
+
+.su-post-title a {font-family: 'Roboto'; color:#026d61 !important;}
+
+.entry-title { font-family: 'Poppins', sans-serif !important; font-weight: 600 !important; font-size: 36px !important; color: #222 !important; margin-top: 30px; margin-bottom: 30px !important; text-align:center;} /* titulos dos posts */
+.entry-title a { color: #535c68;}
+.entry-meta { letter-spacing: 0; color: #767676; font-size: 11px; font-weight: 300;}
+
+.post .entry-title { display: block; font-size: 1.5em !important; font-weight: 600 !important; color: #026d61!important; margin-top: 0px; margin-bottom: 30px !important; border-bottom: 2px solid #96c964; padding-bottom: 5px; text-align: left;}
+
+.site-branding { display:none;}
+.n2-section-smartslider {margin-top: 0px;}
+
+.wp-block-latest-posts li a { color:#026d61; text-decoration:none !important;}
+
+.entry-content a, .entry-summary a, .comment-content a, .widget a, .site-footer .widget-area a, .posts-navigation a, .widget_authors a strong { -webkit-box-shadow: 0; box-shadow: none;}
+	
+#panel4 {background-color: #00796b; color: #fff; margin-bottom: 0px;}
+
+/*footer*/
+.site-footer {margin-top: 0px; background-color: #00796b; color: #fff; background-repeat: no-repeat; background-image: url(/wp-content/uploads/2019/07/cerrado-brasileiro.jpg); background-position: bottom;}
+.site-footer .social-navigation { display:none;}
+.site-footer h2 { color:#fff;}
+.site-footer .social-navigation a { background-color:#49bc95;}
+.site-footer .site-info a {color:#49bc95;display:none !important;}
+.entry-footer .cat-links, .entry-footer .tags-links { font-size: 11px; font-weight: 500; letter-spacing: 0;}
+.entry-footer {margin-top:0px; background-color:#f1f2f6; padding:25px;}
+#footer-brasil { background: #026d61 !important; padding: 1em 0px; max-width: 100%;}
+.site-footer a {color:#fff !important;}
+.home .site-footer {top: -80px !important;}
+
+.custom-header { display:none;}
+
+#panel1 {background-color:#f1f2f6;}
+.search-form button, input[type="button"], input[type="submit"] { background-color: #96c964; border-radius:50px; -moz-border-radius:50px; -webkit-border-radius:50px;}
+.search-field {border-radius:50px !important; -moz-border-radius:50px !important; -webkit-border-radius:50px !important;}
+
+/*widget*/
+.widget_listcategorypostswidget strong a { display:none !important; } /*ocultar subtitulo widget*/
+
+/* navegacao */
+.site-navigation-fixed.navigation-top { -webkit-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.15); -moz-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.15); box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.15);}
+.site-navigation-fixed .search-field {border:0px;}
+.main-navigation .buscam {float:right; margin-right:30px;}
+.site-navigation-fixed.navigation-top {position:relative; top:0px !important;}
+.post-navigation {margin-top:1em;}
+.nav-title { font-family: 'Roboto'; color: #026d61; font-weight: 900 !important; letter-spacing: 0; font-size: 14px; text-transform: capitalize !important;}
+.nav-subtitle { font-family: 'Roboto'; font-size: 11px; letter-spacing: 0;}
+.navigation-top .sub-menu a:hover {color: #fff !important; }
+.navigation-top a {font-size: 17px; font-family: 'Poppins', sans-serif; color: #555 !important; padding: 12px !important; margin-top: 5px !important; font-weight: 600 !important; }
+
+/**Box Destaque alterado strong*/ 
+.iconedestaque { background-color:#fff !important; border:2px solid #f5f5f5; font-size:14px; line-height:22px !important; padding: 25px; margin:0px 10px 0px 0px !important; min-width:230px !important; box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.07);}
+.iconedestaque strong {line-height:25px !important;  font-family: 'Poppins', sans-serif; font-weight: 600; color: #444; font-size: 21px;}
+.iconedestaque a img {-webkit-box-shadow: 0 0 0 0px; box-shadow: 0 0 0 0px;}
+.iconedestaque:hover a {  color:#fff !important; -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0px 0 rgba(0, 0, 0, 1); }
+.iconedestaque:hover { cursor:pointer; background-color:#49bc95 !important; -webkit-transition: all 0.5s ease-in-out 0s; -moz-transition: all 0.5s ease-in-out 0s; -ms-transition: all 0.5s ease-in-out 0s; -o-transition: all 0.5s ease-in-out 0s; transition: all 0.5s ease-in-out 0s;}
+.satelite { color:#535c68; font-weight:600;}
+
+/*Box downloads*/
+.linksdestaque { background-color:#fff !important; border:2px solid #f5f5f5;  line-height:22px !important; padding: 25px; box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.07); margin-bottom:20px;  min-height:100px !important;}
+.btngreen {background-color: #007968; box-shadow: none !important; border: 0px; padding: .5rem 1rem; font-size: 1.2rem; border-radius: .3rem; color:#fff; line-height:50px;} 
+.btngreen:hover {background-color:#96c964 !important; color:#fff !important;}
+.btngreen:visited { background-color: #007968; color:#fff !important;}
+.divfloatr {float:right;}
+.divfloatr .btngreen:hover {background-color:#96c964 !important; color:#fff !important;}
+.divfloatleft {float:left;}
+.divfloatleft .btngreen:hover {background-color:#96c964 !important; color:#fff !important;}
+.iconedownload {vertical-align: middle; margin-right:20px;}
+.iconenew {vertical-align: middle; margin-right:8px;}
+
+.alert-success {background-color: #d4edda !important;}
+.mt-10 {margin-top:10px !important;}
+
+/*busca rodape 2 */
+.menu-social-links-menu-container .buscam {display:none !important;}
+/* site-main*/
+#primary { min-width:100%;}
+.blog #primary { min-width:70% !important;}
+.post-template-default #primary {min-width:70% !important;}
+.category #primary {min-width:70% !important;}
+/*Linha titulo */
+.wp-block-separator { width: 80px !important; height: 4px !important; background: #96c964 !important; margin-bottom:35px;}
+.tituloemdestaque {font-family: 'Poppins', sans-serif !important;  font-weight: 600 !important; font-size: 36px !important; color: #222 !important;}
+.tituloemdestaquepaginas { font-family: 'Poppins', sans-serif !important; font-weight: 600 !important; font-size: 36px !important; color: #222 !important; margin-top:60px;}
+
+.n2-ow p {font-weight: 100 !important;}
+.n2-ow a {font-weight: 400 !important;}
+.n2-ow h2 {font-family: 'Poppins', sans-serif !important; font-weight: 600 !important;font-size: 36px !important; color: #FFF !important;}
+
+/*titulo categoria*/
+.category_title { font-weight: 400; line-height: 1; letter-spacing: -.05rem; color: #007b5e; margin-bottom: 20px; margin-top: 60px !important; font-size: 30px;}
+
+/* comentarios link*/
+.su-post-comments-link {display:none;}
+.more-link {font-weight:bold; border-bottom:1px}
+
+/* Links hover */
+.entry-content a:hover { -webkit-box-shadow: inset 0 -1px 0 currentColor !important; box-shadow: inset 0 -1px 0 currentColor !important;}
+.widget-area a:hover { -webkit-box-shadow: inset 0 -1px 0 currentColor !important; box-shadow: inset 0 -1px 0 currentColor !important;}
+.entry-title a:hover {-webkit-box-shadow: inset 0 -1px 0 currentColor !important; box-shadow: inset 0 -1px 0 currentColor !important; }
+
+/** Suporte a imagem full bloco **/
+.entry-content .alignwide { margin-left  : -80px; margin-right : -80px;}
+.entry-content .alignfull { margin-left  : calc( -100vw / 2 + 100% / 2 ); margin-right : calc( -100vw / 2 + 100% / 2 ); max-width    : 100vw;}
+.alignfull img { width: 100vw; }
+
+.wp-block-cover, .wp-block-cover-image { width:200%!important;   /* hack para ficar full */}
+.wp-block-cover__inner-container, .wp-block-cover .wp-block-cover__inner-container {width: 55%;}  /* hack para centralizar o texto */
+/* botao hover image full */
+.wp-block-cover a:hover {color: #fff;}
+
+.entry-content p {margin-top:50px;}
+
+/** paineis **/
+#panel2 {background-color: #f1f2f6 !important;}
+#panel1 .panel-content .wrap {padding-bottom: 0px;}
+#panel1 .entry-content {margin-bottom: -50px; /*Portugues - remove margin bottom do ultimo painel proximo ao rodape */}
+#panel2 .panel-content .wrap {padding-bottom: 0px;}
+#panel2 .entry-content {margin-bottom: -50px; /*Ingles - remove margin bottom do ultimo painel proximo ao rodape */}
+
+.blog .panel-content .entry-title, .page-title { font-family: 'Poppins', sans-serif !important; color: #026d61; font-size: 24px; margin-bottom:0px; letter-spacing: 0; text-transform:none; max-width:783px;}
+
+.blog .entry-title {display:block !important;}
+.archive .entry-title {display:block !important;}
+.entry-content a img, .comment-content a img, .widget a img {
+    -webkit-box-shadow: 0 0 0 0px #fff !important;
+    box-shadow: 0 0 0 0px #fff !important; 
+}
+
+.mt-100 {padding-top:30px !important;}
+/*menu download */
+#menudownload {	font-size:22px;	line-height: 32px; color: #ffffff; margin: 0; padding: 0; word-wrap:break-word !important;font-family: 'Open Sans', sans-serif;	}
+#menudownload a {color: #FFF; font-weight:normal !important;}
+#menudownload .toggle,[id^=drop] {display: none;}
+#menudownload nav {margin:0; padding: 0; background-color: #49bc95;}
+#menudownload nav:after {content:""; display:table;	clear:both;}
+#menudownload nav ul {padding:0; margin:0; list-style: none; position: relative;}
+#menudownload nav ul li {margin: 0px; float: left; background-color: #49bc95;}
+#menudownload nav a {display:block; padding:14px 20px; color:#FFF; font-size:17px; text-decoration:none;}
+#menudownload nav ul li ul li:hover { background: #009688; color: #fff; }
+#menudownload nav a:hover { background-color: #009688; color: #fff;  }
+#menudownload nav ul ul {display: none;	position: absolute;	top: 60px;}
+#menudownload nav ul li:hover > ul {display:inherit;}	
+#menudownload nav ul ul li {width:270px; float:none; display:list-item; position: relative;}
+/* estilo para um terceiro nivel*/
+#menudownload nav ul ul ul li {position: relative; top:-60px; left:170px;}
+/* Altere ' +' para mudar o simbolo do Dropdown*/
+#menudownload li > a:after { content:  ' +'; }
+#menudownload li > a:only-child:after { content: ''; }
+/* Media Queries
+--------------------------------------------- */
+@media all and (max-width : 768px) {
+	#menudownload nav {margin: 0;}
+	#menudownload .toggle + a, #menudownload .menu {display: none;}
+	#menudownload .toggle {display: block; background-color: #49bc95; padding:14px 20px; color:#FFF; font-size:17px; text-decoration:none; border:none;	}
+	#menudownload .toggle:hover {background-color: #009688; color: #fff;}
+	#menudownload [id^=drop]:checked + ul {	display: block;	}
+	#menudownload nav ul li {display: block;width: 100%;}
+	#menudownload nav ul ul .toggle, #menudownload nav ul ul a {padding: 0 40px;}
+	#menudownload nav ul ul ul a { padding: 0 80px;	}
+	#menudownload nav a:hover, #menudownload nav ul ul ul a {background-color: #009688;}
+  	#menudownload nav ul li ul li .toggle, #menudownload nav ul ul a, #menudownload nav ul ul ul a{padding:14px 20px; color:#FFF; font-size:17px;}
+  	#menudownload nav ul li ul li .toggle, #menudownload nav ul ul a { background-color: #028a7d;}
+	#menudownload nav ul ul {float: none; position:static; color: #ffffff;}
+	#menudownload nav ul ul li:hover > ul, #menudownload nav ul li:hover > ul {	display: none;}
+	#menudownload nav ul ul li {display: block;	width: 100%;}
+	#menudownload nav ul ul ul li {position: static;}
+}
+@media all and (max-width : 330px) {
+	#menudownload nav ul li {display:block;	width: 94%;}
+}
+
+/* Media Query */
+@media (min-width: 600px) {
+    .wp-block-column:not(:last-child) {margin-right: 0px;}
+	.iconedestaque { min-height:412px;}
+	.wp-block-column:not(:first-child) {margin-left: 12px;}
+	}
+
+#navigationBarUL
+{
+	width: 80px;
+    height: 70px;
+}
+#navbarDropdownLoginLink
+{
+	display: block;
+}
+#navbarDropdownLoginLink .iconmobile
+{
+	display: none !important;
+}
+
+#login-li
+{
+	width: 58px;
+    float: right;
+    margin-right: 20px;
+}
+
+.search-form label
+{
+	display: none;
+}
+
+.search-form
+{
+	margin-top: 10px;
+}
+.navigation-top
+{
+	height: 78px;
+    position: relative;
+}
+a
+{
+	color: #222 !important;
+    text-decoration: none;
+}
+.box-input
+{
+	padding: 0 5px 0 38px !important;
+	background-color: transparent !important;
+	background: transparent !important;
+	color: #ffffff  !important;
+}
+

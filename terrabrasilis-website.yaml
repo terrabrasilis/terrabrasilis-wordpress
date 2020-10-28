@@ -1,0 +1,30 @@
+version: '3.2'
+services:
+  terrabrasilis-website:
+    # image: terrabrasilis/terrabrasilis-website:v0.1
+    #image: wordpress:4.9.8-apache
+    image:wordpress:5.0.3-apache
+    hostname: terrabrasilis.website
+    networks:
+      - proxy
+    # environment:
+    #   WORDPRESS_DB_USER: tb_site
+    #   WORDPRESS_DB_PASSWORD: rJnJtqwA8mBhSHsM
+    #   WORDPRESS_DB_NAME: terrabrasilis_site
+    volumes:
+      - /data/website:/var/www/html
+    ports:
+      - 25112:80
+    depends_on:
+      - db_mysql
+    deploy:
+      replicas: 1
+      # placement:
+      #   constraints:
+      #     - node.labels.master1==master1
+      restart_policy:
+        condition: on-failure
+
+networks:
+  proxy:
+    external: true
