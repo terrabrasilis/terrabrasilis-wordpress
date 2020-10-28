@@ -44,7 +44,7 @@
 
 <script type="text/javascript">
 	var randomNumber = Math.floor((Math.random() * 1000000) + 1);
-	var oauthURL = "http://localhost:9000/getoauthjs?"+randomNumber;
+	var oauthURL = "http://terrabrasilis.dpi.inpe.br/oauth-api/getoauthjs?"+randomNumber;
 	document.writeln("<script type='text/javascript' src='"+oauthURL+"'><\/script>");
 
 window.onload=function()

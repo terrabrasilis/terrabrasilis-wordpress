@@ -289,4 +289,8 @@ a
 	background: transparent !important;
 	color: #ffffff  !important;
 }
+#navbarDropdownLoginPopup
+{
+	width: 400px;
+}
 
