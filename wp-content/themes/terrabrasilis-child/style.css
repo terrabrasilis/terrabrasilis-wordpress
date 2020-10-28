@@ -277,10 +277,10 @@ h2.widget-title {font-family: 'Roboto'; color:#026d61; font-weight: 900 !importa
 	height: 78px;
     position: relative;
 }
-a
+.entry-content a
 {
-	color: #222 !important;
-    text-decoration: none;
+	 color: #222;
+     text-decoration: none;
 }
 .box-input
 {
