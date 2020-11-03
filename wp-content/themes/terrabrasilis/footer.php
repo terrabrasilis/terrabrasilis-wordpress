@@ -41,9 +41,25 @@
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->
+
 <?php wp_footer(); ?>
+
+<?php
+
+$filename = 'VERSION';
+
+if (file_exists($filename)) 
+{
+	$version=file_get_contents("VERSION");
+	?>
+		<div id="version-div">Version: <?php echo $version ?> </div>	
+	<?php
+}
+
+?>
+
+
 <div id="footer-brasil"></div>
 <script defer="defer" src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
-
 </body>
 </html>

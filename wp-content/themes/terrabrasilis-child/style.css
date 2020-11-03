@@ -297,3 +297,18 @@ h2.widget-title {font-family: 'Roboto'; color:#026d61; font-weight: 900 !importa
 .divfloatr .btngreen {
     color: #fff !important;
 }
+#version-div 
+{
+	background: #026d61 !important;
+    padding: 1em 0px;
+	max-width: 100%;
+	font-weight: 900 !important;
+    letter-spacing: 0;
+    font-size: 16px;
+	text-transform: capitalize !important;
+	color: #fff;
+	font-family: 'Poppins', sans-serif !important;
+	padding-right: 10px;
+	position: absolute;
+	right: 0px;
+}
