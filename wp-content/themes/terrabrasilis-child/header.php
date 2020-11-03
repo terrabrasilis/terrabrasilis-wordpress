@@ -44,14 +44,28 @@
 
 <script type="text/javascript">
 	var randomNumber = Math.floor((Math.random() * 1000000) + 1);
-	var oauthURL = "http://terrabrasilis.dpi.inpe.br/oauth-api/getoauthjs?"+randomNumber;
+	//var oauthURL = "http://terrabrasilis.dpi.inpe.br/oauth-api/getoauthjs?"+randomNumber;
+	var oauthURL = "http://localhost:9000/getoauthjs?"+randomNumber;
 	document.writeln("<script type='text/javascript' src='"+oauthURL+"'><\/script>");
 
-window.onload=function()
-{
-	Authentication.initCustom("pt-br", function(){
-	},'#top-menu');
-};
+	
+	<?php echo language_attributes(); ?>;
+	var authenticationLang='pt-br';
+	if(lang=='en-US')
+	{
+		authenticationLang='en';
+	} 
+	else if(lang=='pt-BR')
+	{
+		authenticationLang='pt-br';
+	}
+	window.onload=function()
+	{
+		
+
+		Authentication.initCustom(authenticationLang, function(){
+		},'#top-menu');
+	};
 
 </script>
 
