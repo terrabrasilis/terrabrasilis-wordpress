@@ -301,6 +301,7 @@ h2.widget-title {font-family: 'Roboto'; color:#026d61; font-weight: 900 !importa
 #navbarDropdownLoginPopup
 {
 	width: 400px;
+	left: 0px;
 }
 .dropdown-auth-content
 {
