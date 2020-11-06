@@ -17,10 +17,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 /*adicionado*/
-body {font-family: 'Raleway', sans-serif; font-size: 16px; font-weight: 400; color: #666;}
+body {font-family: 'Raleway', sans-serif !important; font-size: 16px; font-weight: 400 !important; color: #666 !important;}
 body.page:not(.twentyseventeen-front-page) .entry-title { text-transform: none !important; letter-spacing:0 !important; }
 .page.page-one-column .entry-header, .twentyseventeen-front-page.page-one-column .entry-header, .archive.page-one-column:not(.has-sidebar) .page-header { margin-bottom: 0px !important;}
-.wrap {max-width: 1215px !important; }
+.wrap {max-width: 1290px !important; }
 .clasclear {clear:both;}
 strong { font-weight: 600;}
 h1, h2, h3, h4, h5, h6 {font-family: 'Poppins', sans-serif !important;}
@@ -54,6 +54,7 @@ body table {font-size:13px !important;} /* texto tabela*/
 
 p {line-height:30px !important;}
 ul {margin-left:15px;}
+.widget-area a { color: #222 !important; text-decoration: none !important;}
 
 .tabela { font-size:10px;}
 .search-field {padding-right:100px !important; border:1px solid #e2e2e2 !important;}
@@ -67,15 +68,15 @@ h2.widget-title {font-family: 'Roboto'; color:#026d61; font-weight: 900 !importa
 .su-post-title a {font-family: 'Roboto'; color:#026d61 !important;}
 
 .entry-title { font-family: 'Poppins', sans-serif !important; font-weight: 600 !important; font-size: 36px !important; color: #222 !important; margin-top: 30px; margin-bottom: 30px !important; text-align:center;} /* titulos dos posts */
-.entry-title a { color: #535c68;}
-.entry-meta { letter-spacing: 0; color: #767676; font-size: 11px; font-weight: 300;}
+.entry-title a { color: #535c68 !important;}
+.entry-meta { letter-spacing: 0; color: #767676 !important; font-size: 11px; font-weight: 300;}
 
 .post .entry-title { display: block; font-size: 1.5em !important; font-weight: 600 !important; color: #026d61!important; margin-top: 0px; margin-bottom: 30px !important; border-bottom: 2px solid #96c964; padding-bottom: 5px; text-align: left;}
 
 .site-branding { display:none;}
 .n2-section-smartslider {margin-top: 0px;}
 
-.wp-block-latest-posts li a { color:#026d61; text-decoration:none !important;}
+.wp-block-latest-posts li a { color:#026d61 !important; text-decoration:none !important;}
 
 .entry-content a, .entry-summary a, .comment-content a, .widget a, .site-footer .widget-area a, .posts-navigation a, .widget_authors a strong { -webkit-box-shadow: 0; box-shadow: none;}
 	
@@ -192,7 +193,7 @@ h2.widget-title {font-family: 'Roboto'; color:#026d61; font-weight: 900 !importa
 #panel2 .panel-content .wrap {padding-bottom: 0px;}
 #panel2 .entry-content {margin-bottom: -50px; /*Ingles - remove margin bottom do ultimo painel proximo ao rodape */}
 
-.blog .panel-content .entry-title, .page-title { font-family: 'Poppins', sans-serif !important; color: #026d61; font-size: 24px; margin-bottom:0px; letter-spacing: 0; text-transform:none; max-width:783px;}
+.blog .panel-content .entry-title, .page-title { font-family: 'Poppins', sans-serif !important; color: #026d61 !important; font-size: 24px; margin-bottom:0px; letter-spacing: 0; text-transform:none; max-width:783px;}
 
 .blog .entry-title {display:block !important;}
 .archive .entry-title {display:block !important;}
@@ -200,6 +201,7 @@ h2.widget-title {font-family: 'Roboto'; color:#026d61; font-weight: 900 !importa
     -webkit-box-shadow: 0 0 0 0px #fff !important;
     box-shadow: 0 0 0 0px #fff !important; 
 }
+
 
 .mt-100 {padding-top:30px !important;}
 /*menu download */
